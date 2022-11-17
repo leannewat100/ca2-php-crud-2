@@ -33,6 +33,10 @@ include('includes/header.php');
             <label>Description</label>
             <input type="input" name="description">
             <br>        
+
+            <label>Completion Date:</label>
+            <input type="date" name="date">
+            <br>
             
             <label>Location</label>
             <input type="input" name="location">
