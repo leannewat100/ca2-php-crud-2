@@ -37,7 +37,6 @@ include('includes/header.php');
             <input type="input" name="description" 
                    value="<?php echo $records['description']; ?>" 
                    >
-                   
             <br>
 
             
