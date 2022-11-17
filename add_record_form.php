@@ -30,13 +30,13 @@ include('includes/header.php');
             <input type="input" name="name">
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
+            <label>Description</label>
+            <input type="input" name="description">
             <br>        
             
-            <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
-            <br>
+            <label>Location</label>
+            <input type="input" name="location">
+            <br>  
             
             <label>&nbsp;</label>
             <input type="submit" value="Add Record">
