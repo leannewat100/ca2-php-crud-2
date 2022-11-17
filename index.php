@@ -66,6 +66,7 @@ include('includes/header.php');
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Start Date</th>
 <th>Completion Date</th>
 <th>Location</th>
 <th>Delete</th>
@@ -76,6 +77,7 @@ include('includes/header.php');
 
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
+<td><?php echo $record['start']; ?></td>
 <td><?php echo $record['date']; ?></td>
 <td><?php echo $record['location']; ?></td>
 <td><form action="delete_record.php" method="post"

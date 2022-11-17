@@ -4,6 +4,7 @@
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $description = filter_input(INPUT_POST, 'description');
+$start = filter_input(INPUT_POST, 'start');
 $date = filter_input(INPUT_POST, 'date');
 $location = filter_input(INPUT_POST, 'location'); 
 
@@ -21,13 +22,14 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, description, date, location)
+                 (categoryID, name, description, start, date, location)
               VALUES
-                 (:category_id, :name, :description, :date, :location)";
+                 (:category_id, :name, :description, :start, :date, :location)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
     $statement->bindValue(':description', $description);
+    $statement->bindValue(':start', $start);
     $statement->bindValue(':date', $date);
     $statement->bindValue(':location', $location);
     $statement->execute();
