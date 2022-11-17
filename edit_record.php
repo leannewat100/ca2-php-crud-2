@@ -23,6 +23,7 @@ $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
 description = :description,
+date = :date
 location = :location
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
