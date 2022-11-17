@@ -43,6 +43,18 @@ include('includes/header.php');
             <label>Completion Date:</label>
             <input type="date" name="date">
             <br>
+
+            <label>Urgency:</label>
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="Low") echo "checked";?>
+            value="Low"><label>Low</label>
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="Medium") echo "checked";?>
+            value="Medium"><label>Medium</label>
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="High") echo "checked";?>
+            value="High"><label>High</label>
+            <br>
             
             <label>Location</label>
             <input type="input" name="location">
