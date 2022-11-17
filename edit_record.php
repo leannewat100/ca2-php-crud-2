@@ -9,7 +9,7 @@ $location = filter_input(INPUT_POST, 'location');
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
-$category_id == FALSE || empty($name)) {
+$category_id == FALSE || empty($name)) || $description == NULL{
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
