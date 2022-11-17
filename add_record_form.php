@@ -13,7 +13,7 @@ $statement->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-        <h1>Add Record</h1>
+        <h1>Add Task</h1>
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
