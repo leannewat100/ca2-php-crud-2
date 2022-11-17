@@ -34,8 +34,10 @@ include('includes/header.php');
             <br>
 
             <label>Description:</label>
-            <input type="input" name="description"
-                   value="<?php echo $records['description']; ?>">
+            <input type="input" name="description" 
+                   value="<?php echo $records['description']; ?>" 
+                   >
+                   
             <br>
 
             

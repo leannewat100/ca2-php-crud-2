@@ -31,7 +31,9 @@ include('includes/header.php');
             <br>
 
             <label>Description</label>
-            <input type="input" name="description">
+            <textarea  name="description" rows="4" cols="50">
+            </textarea>
+            <br>
             <br>        
 
             <label>Start Date:</label>
