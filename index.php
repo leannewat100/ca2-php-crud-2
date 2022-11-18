@@ -71,7 +71,6 @@ include('includes/header.php');
 <th>Urgency</th>
 <th>Location</th>
 <th>Delete</th>
-<th>Edit</th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
@@ -90,14 +89,8 @@ value="<?php echo $record['recordID']; ?>">
 value="<?php echo $record['categoryID']; ?>">
 <input type="submit" value="Delete">
 </form></td>
-<td><form action="edit_record_form.php" method="post"
-id="delete_record_form">
-<input type="hidden" name="record_id"
-value="<?php echo $record['recordID']; ?>">
-<input type="hidden" name="category_id"
-value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Edit">
-</form></td>
+
+
 </tr>
 <?php endforeach; ?>
 </table>
