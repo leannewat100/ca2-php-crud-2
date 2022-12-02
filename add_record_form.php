@@ -27,21 +27,21 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" name="name">
+            <input type="input" name="name" placeholder="Task Name" required>
             <br>
 
             <label>Description</label>
-            <textarea  name="description" rows="4" cols="50">
+            <textarea  name="description" rows="4" cols="50" placeholder="Short description of task" required>
             </textarea>
             <br>
             <br>        
 
             <label>Start Date:</label>
-            <input type="date" name="start">
+            <input type="date" name="start" required>
             <br>
 
             <label>Completion Date:</label>
-            <input type="date" name="date">
+            <input type="date" name="date" required>
             <br>
 
             <label>Urgency:</label>
