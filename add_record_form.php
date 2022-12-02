@@ -57,7 +57,7 @@ include('includes/header.php');
             <br>
             
             <label>Location</label>
-            <input type="input" name="location">
+            <input type="input" name="location" placeholder="Task Location">
             <br>  
             
             <label>&nbsp;</label>
