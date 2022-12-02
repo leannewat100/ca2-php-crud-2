@@ -31,7 +31,7 @@ include('includes/header.php');
             <br>
 
             <label>Description</label>
-            <textarea  name="description" rows="4" cols="50" placeholder="Short description of task" required>
+            <textarea  name="description" rows="4" cols="50" placeholder="Short description of task" required></textarea>
             </textarea>
             <br>
             <br>        
