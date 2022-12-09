@@ -8,9 +8,9 @@
 <body>
 <header><h1>My PHP CRUD app</h1>
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a class="active" href="index.php">Home</a>
+  <a href="add_record_form.php">Add Task</a>
+  <a href="category_list.php">Manage Categories</a>
+  
 </div>
 </header>
