@@ -64,7 +64,7 @@ include('includes/header.php');
             <input type="submit" value="Add Task">
             <br>
         </form>
-        <p><a href="index.php">View Homepage</a></p>
+        
     <?php
 include('includes/footer.php');
 ?>
