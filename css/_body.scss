@@ -16,11 +16,7 @@ body {
     padding: .5em 2em;
 }
 
-section {
-    float: left;
-    width: 800PX;
-    padding-bottom: 1.5em;
-}
+
 
 ul {
     margin: 0 0 1em 0;
@@ -37,16 +33,7 @@ a {
 a:hover {
     color: rgb(208, 133, 4);
 }
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-td, th {
-    border: 1px dashed black;
-    padding: .2em .5em .2em .5em;
-    vertical-align: top;
-    text-align: left;
-}
+
 form {
     margin: 0;
 }
