@@ -41,7 +41,7 @@ include('includes/header.php');
           id="add_category_form">
 
         <label>Name:</label>
-        <input type="input" name="name">
+        <input type="input" name="name" placeholder="Category Name" required>
         <input id="add_category_button" type="submit" value="Add">
     </form>
     <br>
