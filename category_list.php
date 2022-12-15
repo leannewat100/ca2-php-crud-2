@@ -15,7 +15,7 @@
 include('includes/header.php');
 ?>
     <h1>Category List</h1>
-    <table>
+    <table class="table-responsive">
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>

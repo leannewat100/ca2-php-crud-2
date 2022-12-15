@@ -42,7 +42,7 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>To Do List</h1>
+<h1></h1>
 
 <aside>
 <!-- display a list of categories -->
@@ -50,13 +50,14 @@ include('includes/header.php');
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
-<li><a href=".?category_id=<?php echo $category['categoryID']; ?>">
+   <li>
+   <a class="btn btn-light" href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
 </a>
 </li>
 <?php endforeach; ?>
 </ul>
-</nav>          
+</nav>    
 </aside>
 
 <section>
@@ -64,6 +65,7 @@ include('includes/header.php');
 <h2><?php echo $category_name; ?></h2>
 <div class="table-responsive">
 <table class="table">
+    
 <tr>
 <th>Name</th>
 <th>Description</th>
@@ -73,8 +75,10 @@ include('includes/header.php');
 <th>Location</th>
 <th>Delete</th>
 </tr>
+
 <?php foreach ($records as $record) : ?>
 <tr>
+
 
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
@@ -82,6 +86,7 @@ include('includes/header.php');
 <td><?php echo $record['date']; ?></td>
 <td><?php echo $record['urgency']; ?></td>
 <td><?php echo $record['location']; ?></td>
+
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"

@@ -60,8 +60,9 @@ include('includes/header.php');
             <input type="input" name="location" placeholder="Task Location">
             <br>  
             
+            <br>
             <label>&nbsp;</label>
-            <input type="submit" value="Add Task">
+            <input class="btn btn-light" type="submit" value="Add Task">
             <br>
         </form>
         

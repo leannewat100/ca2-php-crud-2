@@ -1,6 +1,6 @@
 /* Here is whre the variables start */ /* Here is whre the font styles start */
 h1 {
-  font-size: 150%;
+  font-size: 200%;
   margin: 0;
   padding: 0.5em 0 0.25em;
 }
@@ -15,14 +15,19 @@ h1, h2 {
   color: white;
 }
 
+label {
+  color: white;
+}
+
 /* Here is whre the header styles start */
 header {
   margin: 0;
 }
 header h1 {
+  font-family: "Rubik Gemstones", cursive;
   margin: 0;
   padding: 0.5em 0;
-  color: black;
+  color: white;
 }
 
 nav ul {
@@ -138,6 +143,13 @@ br {
   content: "";
   display: table;
   clear: both;
+}
+
+tr {
+  border-radius: 25px;
+  background-color: white;
+  border-color: #1c1c1c;
+  border-width: 5px;
 }
 
 /* Here is whre the sidebar styles start */
