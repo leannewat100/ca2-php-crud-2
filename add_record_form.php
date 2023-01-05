@@ -17,47 +17,71 @@ include('includes/header.php');
         <form action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
-            <label>Category:</label>
-            <select name="category_id">
+              <div class="row g-3">
+  <div class="col-md-6">
+  <label>Category:</label class="form-label">
+  <select name="category_id" class="form-select">
             <?php foreach ($categories as $category) : ?>
                 <option value="<?php echo $category['categoryID']; ?>">
                     <?php echo $category['categoryName']; ?>
                 </option>
             <?php endforeach; ?>
             </select>
-            <br>
-            <label>Name:</label>
-            <input type="input" name="name" placeholder="Task Name" required>
-            <br>
+  </div>
+  <div class="col-md-6">
+  <label>Name:</label class="form-label">
+    <input type="input" name="name" class="form-control" placeholder="Task name" aria-label="Task name" required>
+  </div>
 
-            <label>Description</label>
-            <textarea  name="description" rows="4" cols="40" placeholder="Short description of task" required></textarea>
-            </textarea>
-            <br>
-            <br>        
+<div class="col-12">
+<label for="exampleFormControlTextarea1" class="form-label">Description</label>
+  <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Short description of task" required></textarea>
+  </div>
 
-            <label>Start Date:</label>
-            <input type="date" name="start" required>
-            <br>
 
-            <label>Completion Date:</label>
-            <input type="date" name="date" required>
-            <br>
+  <div class="col-md-6">
+  <label class="form-label">Start Date:</label>
+    <input type="date" name="start" class="form-control"  required>
+  </div>
+  <div class="col-md-6">
+  <label class="form-label">Completion Date:</label>
+    <input type="date" name="date" class="form-control"  required>
+  </div>
 
-            <label>Urgency:</label>
-            <input type="radio" name="urgency"
+
+
+  <div class="col-md-6">
+  <label class="form-label">Urgency:</label>
+  <div class="form-check">
+            <input type="radio" class="form-check-input" name="urgency"
             <?php if (isset($urgency) && $urgency=="Low") echo "checked";?>
-            value="Low"><label>Low</label>
-            <input type="radio" name="urgency"
+            value="Low">
+            <label class="form-check-label">Low</label>
+ </div>
+ <div class="form-check">
+            <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="Medium") echo "checked";?>
-            value="Medium"><label>Medium</label>
-            <input type="radio" name="urgency"
+            value="Medium">
+            <label class="form-check-label">Medium</label>
+            </div>          
+ <div class="form-check">            
+            <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="High") echo "checked";?>
-            value="High"><label>High</label>
+            value="High">
+            <label class="form-check-label">High</label>
+            </div>
             <br>
+  </div>
+
+  <div class="col-md-6">
+  <label>Location</label class="form-label">
+            <input type="input" class="form-control" name="location" placeholder="Task Location">
+  </div>
+         
+            </div>
+ 
             
-            <label>Location</label>
-            <input type="input" name="location" placeholder="Task Location">
+           
             <br>  
             
             <br>
