@@ -57,7 +57,7 @@ nav ul li {
 }
 
 .topnav a:hover {
-  background-color: rgb(37, 238, 255);
+  background-color: rgb(170, 165, 247);
   color: white;
 }
 
@@ -139,10 +139,17 @@ br {
   clear: both;
 }
 
-tr {
+.tasklist tr {
   border-radius: 25px;
   background-color: white;
   border-color: #1c1c1c;
+  border-width: 5px;
+  padding: 0.5rem 0.5rem;
+}
+
+.categorieslist tr {
+  background-color: white;
+  border-color: white;
   border-width: 5px;
 }
 
@@ -156,11 +163,12 @@ aside {
 footer {
   clear: both;
   margin-top: 1em;
-  border-top: 2px solid black;
+  border-top: 2px solid white;
 }
 
 footer p {
   text-align: right;
   font-size: 80%;
   margin: 1em 0;
+  color: white;
 }/*# sourceMappingURL=mystyle.css.map */

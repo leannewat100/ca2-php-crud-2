@@ -69,10 +69,20 @@ br {
     clear: both;
   }
 
+ .tasklist{ 
   tr {
     border-radius: 25px;
     background-color: white;
     border-color: #1c1c1c;
     border-width: 5px;
-    
+    padding: 0.5rem 0.5rem;
   }
+}
+
+.categorieslist {
+    tr{
+        background-color: white;
+        border-color: white;
+        border-width: 5px;
+    }
+}

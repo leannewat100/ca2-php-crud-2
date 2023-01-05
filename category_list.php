@@ -15,7 +15,9 @@
 include('includes/header.php');
 ?>
     <h1>Category List</h1>
-    <table class="table-responsive">
+    
+    <div class="table-responsive categorieslist">
+    <table>
         <tr>
             <th>Name</th>
             <th>&nbsp;</th>
@@ -28,12 +30,13 @@ include('includes/header.php');
                       id="delete_product_form">
                     <input type="hidden" name="category_id"
                            value="<?php echo $category['categoryID']; ?>">
-                    <input type="submit" value="Delete">
+                    <input class="btn btn-light" type="submit" value="Delete">
                 </form>
             </td>
         </tr>
         <?php endforeach; ?>
     </table>
+        </div>
     <br>
 
     <h2>Add Category</h2>
@@ -42,7 +45,7 @@ include('includes/header.php');
 
         <label>Name:</label>
         <input type="input" name="name" placeholder="Category Name" required>
-        <input id="add_category_button" type="submit" value="Add">
+        <input id="add_category_button" type="submit" class="btn btn-light" value="Add">
     </form>
     <br>
 

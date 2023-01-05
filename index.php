@@ -20,6 +20,7 @@ $category = $statement1->fetch();
 $statement1->closeCursor();
 $category_name = $category['categoryName'];
 
+
 // Get all categories
 $queryAllCategories = 'SELECT * FROM categories
 ORDER BY categoryID';
@@ -38,6 +39,7 @@ $statement3->execute();
 $records = $statement3->fetchAll();
 $statement3->closeCursor();
 ?>
+
 <div class="container">
 <?php
 include('includes/header.php');
@@ -63,7 +65,7 @@ include('includes/header.php');
 <section>
 <!-- display a table of records -->
 <h2><?php echo $category_name; ?></h2>
-<div class="table-responsive">
+<div class="table-responsive tasklist">
 <table class="table">
     
 <tr>
@@ -93,7 +95,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Delete">
+<input class="btn btn-light" type="submit" value="Delete">
 </form></td>
 
 
