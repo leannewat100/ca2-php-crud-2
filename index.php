@@ -53,7 +53,7 @@ include('includes/header.php');
 <ul>
 <?php foreach ($categories as $category) : ?>
    <li>
-   <a class="btn btn-light" href=".?category_id=<?php echo $category['categoryID']; ?>">
+   <a class="btn btn-light catbtn" href=".?category_id=<?php echo $category['categoryID']; ?>">
 <?php echo $category['categoryName']; ?>
 </a>
 </li>
@@ -95,7 +95,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input class="btn btn-light" type="submit" value="Delete">
+<input class="btn btn-light delbtn" type="submit" value="Delete">
 </form></td>
 
 

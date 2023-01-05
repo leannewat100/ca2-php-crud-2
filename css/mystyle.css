@@ -114,6 +114,15 @@ br {
   margin-top: 1em;
 }
 
+.catbtn {
+  width: 75%;
+}
+
+.delbtn {
+  background-color: rgb(170, 165, 247);
+  color: white;
+}
+
 .tasklist tr {
   border-radius: 25px;
   background-color: white;

@@ -6,7 +6,6 @@ body {
 
 }
 
-
 .container {
     /* margin-top: 0; */
     width: 1000px;
@@ -47,8 +46,15 @@ br {
 	margin-top: 1em;	
 }
 
+.catbtn
+{
+    width: 75%;
+}
 
-
+.delbtn{
+    background-color: rgba(170,165,247,1);
+    color: white;
+}
  .tasklist{ 
   tr {
     border-radius: 25px;

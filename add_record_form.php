@@ -80,11 +80,6 @@ include('includes/header.php');
          
             </div>
  
-            
-           
-            <br>  
-            
-            <br>
             <label>&nbsp;</label>
             <input class="btn btn-light" type="submit" value="Add Task">
             <br>
