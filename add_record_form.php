@@ -81,7 +81,9 @@ include('includes/header.php');
             </div>
  
             <label>&nbsp;</label>
+            <div class="d-grid gap-2 col-2 mx-auto">
             <input class="btn btn-light delbtn" type="submit" value="Add Task">
+            </div>
             <br>
         </form>
         
