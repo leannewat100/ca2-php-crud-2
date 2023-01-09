@@ -54,7 +54,15 @@ br {
 .delbtn{
     background-color: rgba(170,165,247,1);
     color: white;
+    
+
+    a:hover {
+        background-color: rgba(252,120,242,1);
+        color: white;
+      }
 }
+
+
  .tasklist{ 
   tr {
     border-radius: 25px;
@@ -65,10 +73,8 @@ br {
   }
 }
 
-.categorieslist {
-    tr{
-        background-color: white;
-        border-color: white;
-        border-width: 5px;
-    }
+ .cate {
+    tr {
+        color: white;
+      }
 }

@@ -21,6 +21,10 @@ label {
   color: white;
 }
 
+.cate {
+  font-size: 40px;
+}
+
 /* Here is whre the header styles start */
 header {
   margin: 0;
@@ -122,6 +126,10 @@ br {
   background-color: rgb(170, 165, 247);
   color: white;
 }
+.delbtn a:hover {
+  background-color: rgb(252, 120, 242);
+  color: white;
+}
 
 .tasklist tr {
   border-radius: 25px;
@@ -131,10 +139,8 @@ br {
   padding: 0.5rem 0.5rem;
 }
 
-.categorieslist tr {
-  background-color: white;
-  border-color: white;
-  border-width: 5px;
+.cate tr {
+  color: white;
 }
 
 /* Here is whre the sidebar styles start */
