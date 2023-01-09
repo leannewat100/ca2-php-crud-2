@@ -50,7 +50,7 @@ include('includes/header.php');
         <input type="input" class="form-control" name="name" placeholder="Category Name" required>
         </div>
         <div class="col-sm-2">
-        <input id="add_category_button" class="form-control" type="submit" class="btn btn-light" value="Add">
+        <input id="add_category_button" class="form-control" type="submit" class="btn btn-light delbtn" value="Add">
         </div>
         </div>
     </form>

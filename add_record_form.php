@@ -14,7 +14,7 @@ $statement->closeCursor();
 include('includes/header.php');
 ?>
         <h1>Add Task</h1>
-        <form action="add_record.php" method="post" enctype="multipart/form-data"
+        <form class="tform" action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
               <div class="row g-3">
@@ -81,7 +81,7 @@ include('includes/header.php');
             </div>
  
             <label>&nbsp;</label>
-            <input class="btn btn-light" type="submit" value="Add Task">
+            <input class="btn btn-light delbtn" type="submit" value="Add Task">
             <br>
         </form>
         
