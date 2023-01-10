@@ -47,5 +47,5 @@ Add Task Page:
 
 ![image info](./readme-images/Phone-AddTask.png)
 
-![image info](./readme-images/Phone-Categories.png)
+![image info](./readme-images/Phone-Categories.png width="200")
 
