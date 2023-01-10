@@ -58,6 +58,19 @@ br {
     color: white;
 }
 
+.addbtn {
+    background-color: rgba(170,165,247,1);
+    color: white;
+   
+}
+
+.catname {
+    @media (max-width: 768px) {
+        width: 80%;
+      }
+}
+
+
  .tasklist{ 
   tr {
     border-radius: 25px;

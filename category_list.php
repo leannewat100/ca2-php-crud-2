@@ -46,11 +46,11 @@ include('includes/header.php');
     <form action="add_category.php" method="post"
           id="add_category_form">
           <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 catname">
         <input type="input" class="form-control" name="name" placeholder="Category Name" required>
         </div>
         <div class="col-sm-2">
-        <input id="add_category_button" class="form-control" type="submit" class="btn btn-light delbtn" value="Add">
+        <input id="add_category_button" class="form-control btn btn-light addbtn" type="submit" value="Add">
         </div>
         </div>
     </form>

@@ -124,6 +124,17 @@ br {
   color: white;
 }
 
+.addbtn {
+  background-color: rgb(170, 165, 247);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .catname {
+    width: 80%;
+  }
+}
+
 .tasklist tr {
   border-radius: 25px;
   background-color: white;
