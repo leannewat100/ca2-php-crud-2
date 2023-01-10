@@ -88,6 +88,8 @@ or download it to run it locally
 
 * Move the PHP files into your XAMPP htdocs folder so Apache can process the PHP code
 
-* Configure the database.php file to connect to your SQL database - change the username and password to this
+* Configure the database.php file to connect to your SQL database - change the username and password to yours
 
-![image info](./readme-images/username.png)
+$dsn = 'mysql:host=localhost;dbname=ca2-php-crud-2';
+$username = 'USERNAME';
+$password = 'PASSWORD';
