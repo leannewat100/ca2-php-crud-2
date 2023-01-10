@@ -1,4 +1,4 @@
-# students-php-crud
+# To Do List 
 A starter project for DkIT students on the Server-Side module.
 ### Instructions
 * Create a MySQL database called php-crud in PHP MyAdmin
@@ -68,9 +68,9 @@ Home Page - Home Category:
 * The website is responsive to different screen sizes 
   from desktop to phone.
 
-![image info](./readme-images/Phone-Home.png)
+* ![image info](./readme-images/Phone-Home.png)
 
-![image info](./readme-images/Phone-AddTask.png)
+* ![image info](./readme-images/Phone-AddTask.png)
 
-![image info](./readme-images/Phone-Categories.png)
+* ![image info](./readme-images/Phone-Categories.png)
 
