@@ -1,5 +1,9 @@
 # To Do List 
 
+### Contents
+* To Do List Website
+* How To View/Work
+
 ### To Do List Website
 
 ### Home Page
@@ -64,7 +68,7 @@ Home Page - Home Category:
 
 * ![image info](./readme-images/Phone-Categories.png)
 
-# How to view
+# How To View/Work
 
 Click this link to see the application live:
 
