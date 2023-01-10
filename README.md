@@ -66,7 +66,9 @@ Home Page - Home Category:
 
 # How to view
 
-Click this link:
+Click this link to see the application live:
+
+[To Do List PHP CRUD app](https://mysql07.comp.dkit.ie/D00228217/ca2-php-crud-2/index.php)
 
 
 or download it to run it locally
@@ -76,7 +78,7 @@ or download it to run it locally
 
 ![image info](./readme-images/XAMPP.png)
 
-* Create a MySQL database called ca2-php-crud-2 in [PHP MyAdmin] (http://localhost/phpmyadmin)
+* Create a MySQL database called ca2-php-crud-2 in [PHP MyAdmin](http://localhost/phpmyadmin)
 
 ![image info](./readme-images/phpmyadmin.png)
 
