@@ -9,7 +9,6 @@
 ### To Do List Website
 
 ### Home Page
-Home Page - College Category: 
 * The Home page displays all the tasks in the different categories
 
 Home Page - College Category: 
@@ -42,7 +41,7 @@ Home Page - Home Category:
 
 * To view your categories click the Manage Categories 
   button in the Nav bar.
-* Here you can add or delete catgories.
+* Here you can add or delete categories.
 
 ![image info](./readme-images/Categories01.png)
 
@@ -64,7 +63,7 @@ Home Page - Home Category:
 ### Phone Size (as small as 576px)
 * The website is responsive to different screen sizes 
   from desktop to phone.
-* Below are the different pages for a phone.  
+* Below are the different pages on a phone.  
 
 * ![image info](./readme-images/Phone-Home.png)
 
