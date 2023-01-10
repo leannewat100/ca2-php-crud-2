@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Feb 20, 2022 at 06:31 PM
--- Server version: 5.7.34
--- PHP Version: 7.4.21
+-- Host: 127.0.0.1
+-- Generation Time: Jan 10, 2023 at 01:36 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ca2`
+-- Database: `ca2-php-crud-2`
 --
 
 -- --------------------------------------------------------
@@ -37,9 +37,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Category 1'),
-(2, 'Category 2'),
-(3, 'Category 3');
+(1, 'College'),
+(2, 'Work'),
+(3, 'Home');
 
 -- --------------------------------------------------------
 
@@ -51,27 +51,33 @@ CREATE TABLE `records` (
   `recordID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `image` varchar(255) NOT NULL
+  `description` varchar(50) NOT NULL,
+  `start` date DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `urgency` text NOT NULL,
+  `location` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `records`
 --
 
-INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `image`) VALUES
-(1, 1, 'Some text', '12.00', '644471.jpg'),
-(2, 1, 'Some text', '15.00', '233012.jpg'),
-(3, 1, 'Some text', '18.00', '329484.jpg'),
-(4, 1, 'Some text', '10.00', '644055.jpg'),
-(5, 2, 'Some text', '16.00', '373465.jpg'),
-(6, 2, 'Some text', '19.00', '373989.jpg'),
-(7, 2, 'Some text', '12.00', '374104.jpg'),
-(8, 2, 'Some text', '10.00', '4733.jpg'),
-(9, 2, 'Some text', '15.00', '834551.jpg'),
-(10, 3, 'Some text', '13.00', '908783.jpg'),
-(11, 3, 'Some text', '17.00', '835545.jpg'),
-(12, 3, 'Some text', '19.00', '119273.jpg');
+INSERT INTO `records` (`recordID`, `categoryID`, `name`, `description`, `start`, `date`, `urgency`, `location`) VALUES
+(22, 1, 'Finish Coding', 'Finish PHP website and submit it    ', '2022-11-01', '2022-11-18', 'High', 'College'),
+(25, 1, 'Ethics Submission', 'Submit Ethics Doc', '2022-11-03', '2022-11-21', 'High', 'College'),
+(27, 2, 'Post Deals', 'Post deals on instagram and facebook', '2022-11-22', '2022-11-22', 'Low', 'Work'),
+(28, 3, 'Feed Cats', 'Feed all the cats', '2022-11-20', '2022-11-20', 'High', 'Home'),
+(29, 3, 'Hoover', 'Hoover the house', '2022-11-19', '2022-11-19', 'Low', 'Home'),
+(30, 3, 'Clean Makeup Drawer', 'Clean and organise makeup drawer', '2022-11-14', '2022-11-28', 'Low', 'Home'),
+(31, 2, 'Create Black Friday Posters', 'Create Black Friday Posters for shop         ', '2022-11-07', '2022-11-20', 'Medium', 'Work'),
+(32, 1, 'InGame Photography CA', 'Take photos in Stray and Doc ', '2022-11-01', '2022-12-01', 'Medium', 'College'),
+(34, 10, 'Finish Assignment', 'Finish Website', '2022-12-15', '2022-12-18', 'Medium', 'College'),
+(35, 9, 'Finish Poster', 'Do Poster Designs', '2022-11-29', '2022-12-17', 'High', 'Work'),
+(36, 3, 'Finish Assignment', 'fdsfagdsgsg', '2022-12-16', '2022-12-16', 'Low', ''),
+(37, 11, 'Chore', 'Hoover House', '2022-12-15', '2022-12-15', 'Low', 'House'),
+(38, 11, 'Sort Clothes', 'Pick clothes to keep or donate', '2022-12-19', '2022-12-25', 'Medium', 'House'),
+(39, 11, 'Coffee date', 'Meet friend for coffee', '2022-12-21', '2022-12-21', 'High', 'Town'),
+(40, 1, 'Finish Assignment', 'Write essay', '2022-12-19', '2022-12-28', 'Medium', '');
 
 --
 -- Indexes for dumped tables
@@ -97,16 +103,15 @@ ALTER TABLE `records`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `categoryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `records`
 --
 ALTER TABLE `records`
-  MODIFY `recordID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `recordID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
