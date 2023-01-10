@@ -1,16 +1,6 @@
 # To Do List 
-A starter project for DkIT students on the Server-Side module.
-### Instructions
-* Create a MySQL database called php-crud in PHP MyAdmin
-* Run the code in the sql-db.txt file in PHP MyAdmin
-* Move the PHP files in to your htdocs folder so Apache can process the PHP code
-* Configure the database.php file to connect to your SQL database
-### Merry Christmas
-* Buy lots of presents
-* Open presents!!
 
 ### To Do List Website
-
 
 ### Home Page
 Home Page - College Category: 
@@ -74,3 +64,28 @@ Home Page - Home Category:
 
 * ![image info](./readme-images/Phone-Categories.png)
 
+# How to view
+
+Click this link:
+
+
+or download it to run it locally
+
+* Install [XAMPP](https://www.apachefriends.org/download.html)
+* Run XAMPP as adminastrator and open Control Panel and run Apache and MySQL
+
+![image info](./readme-images/XAMPP.png)
+
+* Create a MySQL database called ca2-php-crud-2 in [PHP MyAdmin] (http://localhost/phpmyadmin)
+
+![image info](./readme-images/phpmyadmin.png)
+
+* Go to SQL file and add the code from the "data-for-your-database.txt" file
+
+![image info](./readme-images/sql.png)
+
+* Move the PHP files into your XAMPP htdocs folder so Apache can process the PHP code
+
+* Configure the database.php file to connect to your SQL database - change the username and password to this
+
+![image info](./readme-images/username.png)
