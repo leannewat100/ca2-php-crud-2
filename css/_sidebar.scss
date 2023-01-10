@@ -15,7 +15,22 @@ aside {
 {
     width: 75%;
     @media (max-width: 768px) {
-        width: 30%;
+        width: 90%;
+
+      }
+}
+
+li {
+    @media (max-width: 768px) {
+        display: inline-block;
+        width: 32%;
+        
+      }
+}
+
+nav {
+    @media (max-width: 768px) {
+        padding-left: 25px;
         
       }
 }
