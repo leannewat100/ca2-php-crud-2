@@ -14,7 +14,7 @@ $statement->closeCursor();
 include('includes/header.php');
 ?>
         <h1>Add Task</h1>
-        <form class="tform needs-validation" action="add_record.php" method="post" enctype="multipart/form-data"
+        <form class="tform was-validated" action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
               <div class="row g-3">
@@ -31,11 +31,17 @@ include('includes/header.php');
   <div class="col-md-6">
   <label>Name:</label class="form-label">
     <input type="input" name="name" class="form-control" placeholder="Task name" aria-label="Task name" required>
+    <div class="valid-feedback">
+      Perfect!
+    </div>
   </div>
 
 <div class="col-12">
 <label for="exampleFormControlTextarea1" class="form-label">Description</label>
   <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Short description of task" required></textarea>
+  <div class="valid-feedback">
+      Looks good!
+    </div>
   </div>
 
 
@@ -55,20 +61,20 @@ include('includes/header.php');
   <div class="form-check">
             <input type="radio" class="form-check-input" name="urgency"
             <?php if (isset($urgency) && $urgency=="Low") echo "checked";?>
-            value="Low" required>
-            <label class="form-check-label">Low</label>
+            value="Low" id="validationFormCheck1" required>
+            <label class="form-check-label" for="validationFormCheck1">Low</label>
  </div>
  <div class="form-check">
             <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="Medium") echo "checked";?>
-            value="Medium" required>
-            <label class="form-check-label">Medium</label>
+            value="Medium" id="validationFormCheck2" required>
+            <label class="form-check-label" for="validationFormCheck2">Medium</label>
             </div>          
  <div class="form-check">            
             <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="High") echo "checked";?>
-            value="High" required>
-            <label class="form-check-label">High</label>
+            value="High" id="validationFormCheck3" required>
+            <label class="form-check-label" for="validationFormCheck3">High</label>
             </div>
             <br>
   </div>
