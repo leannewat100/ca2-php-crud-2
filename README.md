@@ -4,6 +4,8 @@
 * To Do List Website
 * How To View/Work
 
+*** 
+
 ### To Do List Website
 
 ### Home Page
@@ -67,6 +69,8 @@ Home Page - Home Category:
 * ![image info](./readme-images/Phone-AddTask.png)
 
 * ![image info](./readme-images/Phone-Categories.png)
+
+***
 
 # How To View/Work
 
