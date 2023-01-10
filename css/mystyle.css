@@ -21,10 +21,6 @@ label {
   color: white;
 }
 
-.cate {
-  font-size: 40px;
-}
-
 /* Here is whre the header styles start */
 header {
   margin: 0;
@@ -118,16 +114,13 @@ br {
   margin-top: 1em;
 }
 
-.catbtn {
-  width: 75%;
-}
-
 .delbtn {
   background-color: rgb(170, 165, 247);
   color: white;
 }
-.delbtn a:hover {
-  background-color: rgb(252, 120, 242);
+
+.cbtn {
+  background-color: rgb(170, 165, 247);
   color: white;
 }
 
@@ -141,12 +134,32 @@ br {
 
 .cate tr {
   color: white;
+  font-size: 20px;
+}
+
+.deltable {
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 /* Here is whre the sidebar styles start */
 aside {
   float: left;
   width: 150px;
+}
+@media (max-width: 768px) {
+  aside {
+    width: 100%;
+  }
+}
+
+.catbtn {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .catbtn {
+    width: 30%;
+  }
 }
 
 /* Here is whre the footer styles start */

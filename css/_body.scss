@@ -46,24 +46,17 @@ br {
 	margin-top: 1em;	
 }
 
-.catbtn
-{
-    width: 75%;
-}
+
 
 .delbtn{
     background-color: rgba(170,165,247,1);
     color: white;
-    
-
-    a:hover {
-        background-color: rgba(252,120,242,1);
-        color: white;
-      }
-
-
 }
 
+.cbtn{
+    background-color: rgba(170,165,247,1);
+    color: white;
+}
 
  .tasklist{ 
   tr {
@@ -78,6 +71,11 @@ br {
  .cate {
     tr {
         color: white;
+        font-size: 20px;
       }
 }
 
+.deltable {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

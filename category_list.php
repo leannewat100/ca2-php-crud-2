@@ -18,7 +18,7 @@ include('includes/header.php');
     <h1>Category List</h1>
     
     <div class="table-responsive cate">
-    <table class="table table-bordered-dark">
+    <table class="table table-bordered-dark align-middle">
         
         <tr>
             <th>Name</th>
@@ -29,11 +29,11 @@ include('includes/header.php');
         <tr>
             <td><?php echo $category['categoryName']; ?></td>
             <td>
-                <form class="table" action="delete_category.php" method="post"
+                <form class="table deltable" action="delete_category.php" method="post"
                       id="delete_product_form">
                     <input type="hidden" name="category_id"
                            value="<?php echo $category['categoryID']; ?>">
-                    <input class="btn btn-light delbtn" type="submit" value="Delete">
+                    <input class="btn btn-light cbtn" type="submit" value="Delete">
                 </form>
             </td>
         </tr>

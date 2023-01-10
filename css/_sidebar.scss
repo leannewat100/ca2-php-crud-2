@@ -3,5 +3,19 @@
 aside {
     float: left;
     width: 150px;
+
+    // Medium devices (tablets, 768px and less)
+@media (max-width: 768px) {
+  width: 100%;
+  
+}
 }
 
+.catbtn
+{
+    width: 75%;
+    @media (max-width: 768px) {
+        width: 30%;
+        
+      }
+}
