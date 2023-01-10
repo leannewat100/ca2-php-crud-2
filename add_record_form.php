@@ -14,7 +14,7 @@ $statement->closeCursor();
 include('includes/header.php');
 ?>
         <h1>Add Task</h1>
-        <form class="tform" action="add_record.php" method="post" enctype="multipart/form-data"
+        <form class="tform needs-validation" action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
               <div class="row g-3">
@@ -55,19 +55,19 @@ include('includes/header.php');
   <div class="form-check">
             <input type="radio" class="form-check-input" name="urgency"
             <?php if (isset($urgency) && $urgency=="Low") echo "checked";?>
-            value="Low">
+            value="Low" required>
             <label class="form-check-label">Low</label>
  </div>
  <div class="form-check">
             <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="Medium") echo "checked";?>
-            value="Medium">
+            value="Medium" required>
             <label class="form-check-label">Medium</label>
             </div>          
  <div class="form-check">            
             <input type="radio" class="form-check-input"  name="urgency"
             <?php if (isset($urgency) && $urgency=="High") echo "checked";?>
-            value="High">
+            value="High" required>
             <label class="form-check-label">High</label>
             </div>
             <br>
