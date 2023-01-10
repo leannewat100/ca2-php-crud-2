@@ -7,4 +7,5 @@ A starter project for DkIT students on the Server-Side module.
 * Configure the database.php file to connect to your SQL database
 ### Merry Christmas
 * Buy lots of presents
-* Open presents
+* Open presents!!
+
