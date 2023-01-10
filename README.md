@@ -14,5 +14,5 @@ A starter project for DkIT students on the Server-Side module.
 
 
 Inline-style: 
-![alt text](C:\xampp\htdocs\ca2-php-crud-2\ReadMe Images\AddTask01.png "Logo Title Text 1")
+![image info](./readme-images/Home.png)
 
