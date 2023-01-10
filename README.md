@@ -12,10 +12,11 @@
 Home Page - College Category: 
 * The Home page displays all the tasks in the different categories
 
+Home Page - College Category: 
 ![image info](./readme-images/Home.png)
 
 
-* Click the buttons to view tasks in other categories
+* Click the buttons in the sidebar to view tasks in other categories
 
 Home Page - Home Category: 
 ![image info](./readme-images/Home-Home.png)
@@ -63,6 +64,7 @@ Home Page - Home Category:
 ### Phone Size (as small as 576px)
 * The website is responsive to different screen sizes 
   from desktop to phone.
+* Below are the different pages for a phone.  
 
 * ![image info](./readme-images/Phone-Home.png)
 
@@ -81,6 +83,8 @@ Click this link to see the application live:
 
 or download it to run it locally
 
+Instructions:
+
 * Install [XAMPP](https://www.apachefriends.org/download.html)
 * Run XAMPP as adminastrator and open Control Panel and run Apache and MySQL
 
@@ -96,8 +100,6 @@ or download it to run it locally
 
 * Move the PHP files into your XAMPP htdocs folder so Apache can process the PHP code
 
-* Configure the database.php file to connect to your SQL database - change the username and password to yours
+* Configure the database.php file to connect to your SQL database - change the username and password to yours as seen below
 
-$dsn = 'mysql:host=localhost;dbname=ca2-php-crud-2';
-$username = 'USERNAME';
-$password = 'PASSWORD';
+![image info](./readme-images/code.png)
