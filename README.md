@@ -85,7 +85,7 @@ or download it to run it locally
 Instructions:
 
 * Install [XAMPP](https://www.apachefriends.org/download.html)
-* Run XAMPP as adminastrator and open Control Panel and run Apache and MySQL
+* Run XAMPP as administrator and open Control Panel and run Apache and MySQL
 
 ![image info](./readme-images/XAMPP.png)
 
@@ -97,8 +97,8 @@ Instructions:
 
 ![image info](./readme-images/sql.png)
 
-* Move the PHP files into your XAMPP htdocs folder so Apache can process the PHP code
+* Move the website files (PHP files) into your XAMPP htdocs folder so Apache can process the PHP code
 
-* Configure the database.php file to connect to your SQL database - change the username and password to yours as seen below
+* Configure the database.php file to connect to your SQL database - add the database name and change the username and password to yours as seen below
 
 ![image info](./readme-images/code.png)
